@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Colors */
+    --clr1: #E7EAEF;
+    --clr2: #242424;
+    --clr3: #F3F6FB;
+    --clr4: #BA1D4A;
+    --clr5: #FFFFFF;
+    /* Typography */
+    /* Title H1 */
+    --fnt1: 400 40px 'Poppins', sans-serif;
+    /* Subtitle H2 */
+    --fnt2: 400 20px 'Poppins', sans-serif;
+    /* Section Heading H3 */
+    --fnt3: 500 20px 'Poppins', sans-serif;
+    /* Section Heading H4 */
+    --fnt4: 700 20px 'Poppins', sans-serif;
+    /* Section Title */
+    --fnt5: 500 12px 'Poppins', sans-serif;
+    /* Section Subtitle */
+    --fnt6: italic 500 10px 'Poppins', sans-serif;
+    /* Section Paragraph */
+    --fnt7: 400 10px 'Poppins', sans-serif;
+    /* Section Info */
+    --fnt8: 400 12px 'Poppins', sans-serif;
+    /* Dimension */
+    /* Layout Hr */
+    --lthm: calc(var(--lth1) + var(--lth2));
+    --lth1: 576px;
+    --lth2: 234px;
+    --lth3: 80px;
+    /* Layout Vr */
+    --ltvm: calc(var(--ltv1) + var(--ltv2));
+    --ltv1: 134px;
+    --ltv2: 946px;
+    /* Space Area */
+    --mpg1: 4px;
+    --mpg2: 8px;
+    --mpg3: 10px;
+    --mpg4: 12px;
+    --mpg5: 14px;
+    --mpg6: 16px;
+    --mpg7: 22px;
+    --mpg8: 24px;
+}
+
+body {
+    background-color: var(--clr2);
+}
+
+.header {
+    background-color: var(--clr4);
+    margin: 0 auto;
+    width: var(--lthm);
+}
+
+h1 {
+    background-color: var(--clr5);
+    color: var(--clr4);
+    font: var(--fnt1);
+    padding: var(--mpg3) var(--mpg5);
+    width: var(--lth1);
+}
+
+h2 {
+    background-color: var(--clr3);
+    color: var(--clr2);
+    font: var(--fnt2);
+    padding: var(--mpg5);
+}
+
+.body {
+    color: var(--clr2);
+    margin: 0 auto;
+    width: var(--lthm);
+}
+
+.main {
+    background-color: var(--clr5);
+    float: left;
+    height: var(--ltv2);
+    padding-bottom: var(--mpg8);
+    padding-left: var(--mpg8);
+    padding-right: var(--mpg5);
+    padding-top: var(--mpg8);
+    width: var(--lth1);
+}
+
+.mainSection {
+    background-color: var(--clr5);
+}
+
+.mainSectionHeader {
+    margin-bottom: var(--mpg6);
+}
+
+.mainSectionHeader h3 {
+    font: var(--fnt3);
+}
+
+.mainSectionBody {
+    display: inline-flex;
+    font: var(--fnt7);
+}
+
+.sectionDetails>* {
+    margin-bottom: var(--mpg2);
+}
+
+.sectionSummary {
+    font: var(--fnt5);
+    padding-right: var(--mpg2);
+    width: var(--lth3);
+}
+
+.sectionTitle {
+    font: var(--fnt5);
+}
+
+.sectionSubtitle {
+    font: var(--fnt6);
+}
+
+.aside {
+    align-items: center;
+    background-color: var(--clr3);
+    display: flex;
+    flex-flow: column;
+    float: right;
+    height: var(--ltv2);
+    justify-content: flex-end;
+    width: var(--lth2);
+}
+
+#photo {
+    height: 200px;
+    width: 130px;
+}
+
+.asideProfile {
+    flex: 1;
+    padding-bottom: var(--mpg8);
+    padding-left: var(--mpg8);
+    padding-right: var(--mpg6);
+    padding-top: var(--mpg6);
+}
+
+.asideProfileData {
+    align-items: center;
+    color: var(--clr2);
+    display: inline-flex;
+    font: var(--fnt8);
+    margin-top: var(--mpg6);
+}
+
+.asideProfileData img {
+    height: var(--mpg6);
+    width: var(--mpg6);
+    margin-right: var(--mpg2);
+}
+
+.asideSectionHeader {
+    background-color: var(--clr1);
+    font: var(--fnt5);
+    padding: var(--mpg6);
+}
+
+.asideSectionBody {
+    font: var(--fnt7);
+    padding-bottom: var(--mpg8);
+    padding-left: var(--mpg8);
+    padding-right: var(--mpg6);
+    padding-top: var(--mpg6);
+}
+
+.sectionData:not(:last-of-type) {
+    margin-bottom: var(--mpg1);
+}
+
+.sectionList {
+    padding-left: var(--mpg7);
+}
+
+li:not(:last-of-type) {
+    margin-bottom: var(--mpg1);
+}
+
+.footer {
+    background-color: var(--clr4);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: var(--mpg8);
+    width: var(--lthm);
+}
+
+.footer a {
+    background-color: var(--clr3);
+    border: 1px solid var(--clr4);
+    border-radius: calc(var(--mpg8) * 2);
+    color: var(--clr4);
+    font: var(--fnt3);
+    padding: var(--mpg4) var(--mpg8);
+    box-shadow: 2px 4px var(--clr1);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    box-shadow: 1px 2px var(--clr1);
+}
